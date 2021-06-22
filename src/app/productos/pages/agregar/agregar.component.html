@@ -16,12 +16,11 @@
         </div>
 
         <div class="col-auto">
-            <span 
-                error-msg
-                color="red"
-                [mensaje]="texto1"
-                [color]="color"
-                *ngIf="tieneError('nombre')"></span>
+            <span error-msg
+                  [mensaje]="texto1"
+                  [color]="color"
+                  [valido]="!tieneError('nombre')">
+            </span>
         </div>
 
     </div>
@@ -50,11 +49,11 @@
 <pre>Valid: {{ miFormulario.valid }}</pre>
 
 
-<!-- <div class="row mt-5" 
+<div class="row mt-5" 
     *customIf="miFormulario.valid">
     <div class="col">
         <div class="alert alert-primary">
             Todo OK!
         </div>
     </div>
-</div> -->
+</div>

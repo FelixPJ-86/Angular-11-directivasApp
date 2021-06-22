@@ -24,8 +24,7 @@ export class AgregarComponent {
 
 
   cambiarNombre() {
-    this.texto1 =Math.random().toString();
-    console.log(this.texto1);
+    this.texto1 = Math.random().toString();
   }
 
   cambiarColor() {
